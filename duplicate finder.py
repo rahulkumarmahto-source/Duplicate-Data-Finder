@@ -31,7 +31,7 @@ def process_duplicate_data():
 
         for line in lines:
             cleaned_line = line.strip("\r\n") 
-            if cleaned_line:  # Exclude blank lines
+            if cleaned_line: 
                 total_items += 1
                 raw_entries.append(cleaned_line)
                 processed_entries.append(normalize_text(cleaned_line, ignore_mode))
